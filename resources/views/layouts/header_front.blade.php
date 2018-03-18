@@ -70,7 +70,19 @@
                                                                 <a class="nav-link" href="{{ url('/login') }}">Login</a>
                                                             </li>
                                                             <li>
-                                                                <a class="nav-link" href="{{ url('/register') }}">Register</a>
+                                                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="{{ url('/register') }}">Register</a>
+                                                                <ul class="dropdown-menu" role="menu">
+                                                                    <li>
+                                                                        <a class="nav-link" href="{{ url('investor/register') }}">
+                                                                            As Investor
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="nav-link" href="{{ url('founderer/register') }}">
+                                                                            As Founderer
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
                                                             </li>
                                                         @endif
                                                     @endif
