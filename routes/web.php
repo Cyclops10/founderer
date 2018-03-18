@@ -20,6 +20,7 @@ Route::get('/services', function () { return view('services'); })->name('service
 Route::get('/work', function () { return view('work'); })->name('work');
 Route::get('/work-details', function () { return view('work-details'); })->name('work-details');
 Route::get('/contact', function () { return view('contact'); })->name('contact');
+Route::get('/privacy-policy', function () { return view('privacy-policy'); })->name('contact');
 
 //End Fornt Route
 
