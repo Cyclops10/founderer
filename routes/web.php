@@ -33,8 +33,8 @@ Route::get('investor/register','Auth\RegisterController@showRegistrationForm')->
 Route::post('investor/register', 'Auth\RegisterController@register');
 
 
-Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
-Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('login/{driver}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{driver}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('dashboard',
     [   'uses'=>'HomeController@index',

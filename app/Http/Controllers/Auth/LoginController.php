@@ -46,9 +46,9 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function redirectToProvider()
+    public function redirectToProvider($driver)
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver($driver)->redirect();
     }
 
     /**
@@ -56,9 +56,9 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function handleProviderCallback()
+    public function handleProviderCallback($driver)
     {
-        $username = Socialite::driver('facebook')->user();
+        $username = Socialite::driver($driver)->user();
 
         $findUser = User::where('email',$username->email)->first();
         if($findUser)
