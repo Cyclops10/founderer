@@ -138,12 +138,32 @@
 							</span>
 
 							<div class="mb-1 text-center">
-								<a class="btn btn-facebook mb-3 ml-1 mr-1" href="#">Connect with <i class="fa fa-facebook"></i></a>
-								<a class="btn btn-twitter mb-3 ml-1 mr-1" href="#">Connect with <i class="fa fa-twitter"></i></a>
+								<a href="{{ route('social_login','facebook') }}" class="btn btn-facebook mb-3 ml-1 mr-1" href="#">Connect with <i class="fa fa-facebook"></i></a>
+								<a href="{{ route('social_login','google') }}" class="btn btn-gplus mb-3 ml-1 mr-1" href="#">Connect with <i class="fa fa-google"></i></a>
 							</div>
 
-							<p class="text-center">Don't have an account yet? <a href="{{ route('register') }}">Sign Up!</a></p>
+							<p class="text-center">Don't have an account yet? <a href="#" data-toggle="modal" data-target="#defaultModal">Sign Up!</a></p>
 
+                            {{--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#defaultModal">Launch Default Modal</button>--}}
+                            <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" style="display: none;" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="defaultModalLabel">Default Modal Title</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6" style="text-align: center;"><a href="{{ url('investor/register') }}"><button type="button" class="btn btn-outline btn-primary btn-xl mb-2">As Investor</button></a></div>
+                                                <div class="col-md-6" style="text-align: center;"><a href="{{ url('founderer/register') }}"><button type="button" class="btn btn-outline btn-primary btn-xl mb-2">As Founderer</button></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 						</form>
 					</div>
 				</div>

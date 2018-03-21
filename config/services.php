@@ -38,12 +38,12 @@ return [
     'facebook' => [
         'client_id' => '169661560360882',
         'client_secret' => '1ce01be636961198140bb038b5fb1ca9',
-        'redirect' => 'http://localhost:8000/login/facebook/callback',
+        'redirect' => env('FACEBOOK_REDIRECT'),
     ],
     'google' => [
         'client_id' => '135382734332-lmbdftosul8fel07od56bpccnqljpl0m.apps.googleusercontent.com',
         'client_secret' => 'd2iSOwwEVcaXpmU2sl8WIrvI',
-        'redirect' => 'http://localhost:8000/login/google/callback',
+        'redirect' => env('GOOGLE_REDIRECT'),
     ],
 
 ];

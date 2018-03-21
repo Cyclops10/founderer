@@ -33,7 +33,7 @@ Route::get('investor/register','Auth\RegisterController@showRegistrationForm')->
 Route::post('investor/register', 'Auth\RegisterController@register');
 
 
-Route::get('login/{driver}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{driver}', 'Auth\LoginController@redirectToProvider')->name('social_login');
 Route::get('login/{driver}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('dashboard',
