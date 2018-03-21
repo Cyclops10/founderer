@@ -65,7 +65,7 @@ class LoginController extends Controller
         {
             Auth::login($findUser);
 
-            return 'done with old';
+            return redirect('dashboard');
         }
         else{
             $user = new User;
@@ -74,10 +74,11 @@ class LoginController extends Controller
             $user->email = $username->email;
             $user->password = bcrypt('123456');
             $user->save();
+            $user->roles()->attach(2);
 
             Auth::login($user);
 
-            return 'done with new';
+            return redirect('dashboard');
         }
 
     }
