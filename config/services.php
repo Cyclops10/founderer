@@ -45,5 +45,10 @@ return [
         'client_secret' => 'd2iSOwwEVcaXpmU2sl8WIrvI',
         'redirect' => env('GOOGLE_REDIRECT'),
     ],
+    'twitter' => [
+        'client_id' => 'QgcbeJ2ymstZ3RHdyDomLhDXD',
+        'client_secret' => 'pZTC1UzteuvYImrViiN1hf1Y3wfM1Pfb0oreQmULfLnsHiQa8W',
+        'redirect' => env('TWITTER_REDIRECT'),
+    ],
 
 ];

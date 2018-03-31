@@ -138,7 +138,7 @@
 							</span>
 
 							<div class="mb-1 text-center">
-								<a href="{{ route('social_login','facebook') }}" class="btn btn-facebook mb-3 ml-1 mr-1" href="#">Connect with <i class="fa fa-facebook"></i></a>
+								<a href="{{ route('social_login','twitter') }}" class="btn btn-twitter mb-3 ml-1 mr-1" href="#">Connect with <i class="fa fa-twitter"></i></a>
 								<a href="{{ route('social_login','google') }}" class="btn btn-gplus mb-3 ml-1 mr-1" href="#">Connect with <i class="fa fa-google"></i></a>
 							</div>
 
