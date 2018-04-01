@@ -50,5 +50,10 @@ return [
         'client_secret' => 'pZTC1UzteuvYImrViiN1hf1Y3wfM1Pfb0oreQmULfLnsHiQa8W',
         'redirect' => env('TWITTER_REDIRECT'),
     ],
+    'linkedin' => [
+        'client_id' => '78v9mo2s0blrve',
+        'client_secret' => 'q511V5YsGPMu1GLh',
+        'redirect' => env('LINKEDIN_REDIRECT'),
+    ],
 
 ];
