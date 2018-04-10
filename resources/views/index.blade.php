@@ -2,6 +2,7 @@
 
 @section('content')
 
+<iframe src="https://yalmeh.clickfunnels.com/optin19927265" width="100%" height="650" frameborder="0"></iframe>
 			<div role="main" class="main">
 				<div class="slider-container rev_slider_wrapper" style="height: 600px;">
 					<div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 800, 'gridheight': 600}">
